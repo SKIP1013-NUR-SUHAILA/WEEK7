@@ -1,0 +1,37 @@
+package monday_exercise;
+
+class Exercise2 {
+
+	public static void main(String[] args) {
+		// Generate a random number to be guessed
+		
+	    int number = (int)(Math.random() * 101); //*9 bermaksud no 9 paling tinggi..dia akan print randomly.
+	    java.util.Scanner sc = new java.util.Scanner(System.in);
+	    
+	    int j, i = -1;
+	    
+	    System.out.println("Ini adalah Sistem Meneka Nombor");
+		
+		while(i != number) {
+			 System.out.print("\nSila masukkan nombor antara 1 - 100: ");
+				j = sc.nextInt();
+			 
+				if (j == number) {
+					System.out.println("Taniah! Nombor anda sama!!");
+				}
+				
+				else if (j<number){
+					System.out.println("Maaf! Nombor anda terlalu rendah!!");
+				}
+				
+				else if(j>number) {
+					System.out.println("Maaf! Nombor anda terlalu tinggi!!");
+				}
+		
+		}
+		
+		System.out.println("Nombor random ialah: " + number);
+
+	}
+
+}
