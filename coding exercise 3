@@ -1,0 +1,29 @@
+package monday_exercise;
+
+class Looping_1 {
+
+	public static void main(String[] args) {
+		
+
+		int i=1, j=1, k;
+		
+		//conditon while before curly braket
+		while (i<5) {
+		      System.out.println("i= " +i);
+		      i= i+1;  //i++ pon boleh..sma ja 
+		} 
+		
+		//do...while, condition dekat lepas curly braket kedua.
+		do {
+			   System.out.println("j= " +j);
+			     j= j+1; 
+		}while (j<5); 
+		
+		//for..condition dlm 1 bracket yg declare value k, looping for k, dan condition
+		for (k=1; k<5; k=k+1) {
+			 System.out.println("k= " +k);
+		}
+		
+	}
+
+}
